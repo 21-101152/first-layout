@@ -38,66 +38,79 @@ body {
 }
 
 .person:nth-child(1){
+    position: relative;
     grid-area: os;
 }
 
 .person:nth-child(2){
+    position: relative;
     grid-area: as;
 }
 
 .person:nth-child(3){
+    position: relative;
     grid-area: sn;
     color: white;
     background-color: black;
 }
 
 .person:nth-child(4){
+    position: relative;
     grid-area: mi;
 }
 
 .person:nth-child(5){
+    position: relative;
     grid-area: mm;
     color: white;
     background-color: black;
 }
 
 .person:nth-child(6){
+    position: relative;
     grid-area: ee;
 }
 
 .person:nth-child(7){
+    position: relative;
     grid-area: ms;
     color: white;
     background-color: black;
 }
 
 .person:nth-child(8){
+    position: relative;
     grid-area: is;
 }
 
 .person:nth-child(9){
+    position: relative;
     grid-area: gs;
 }
 
 .person:nth-child(10){
+    position: relative;
     grid-area: es;
 }
 
+/* .person */
+
 .person::after {
     content: '"';
-    position: relative;
+    position: absolute;
     color: #00000059;
-    left: 90%;
-    font-size: 36px;
-    transform: rotate(20deg);
-    -webkit-transform: rotate(20deg);
-    -moz-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    -o-transform: rotate(20deg);
+    right: 15px;
+    bottom: -20px;
+    font-size: 70px;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
 }
 
-.person:nth-child(3):after, 
-.person:nth-child(5):after,
-.person:nth-child(7):after{
-    color: white;
+.person:nth-child(3)::after, 
+.person:nth-child(5)::after,
+.person:nth-child(7)::after{
+    color: rgba(255, 255, 255, 0.473);
 }
