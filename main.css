@@ -98,7 +98,7 @@ body {
 .person::after {
     content: '"';
     position: absolute;
-    color: #00000059;
+    color: #0000001f;
     right: 15px;
     bottom: -20px;
     font-size: 70px;
@@ -112,5 +112,5 @@ body {
 .person:nth-child(3)::after, 
 .person:nth-child(5)::after,
 .person:nth-child(7)::after{
-    color: rgba(255, 255, 255, 0.473);
+    color: rgba(255, 255, 255, 0.345);
 }
